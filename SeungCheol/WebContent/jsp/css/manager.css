@@ -1,0 +1,258 @@
+@charset "UTF-8";
+html{
+	overflow-x: hidden;
+    overflow-y: hidden;
+	width: 100%; 
+	letter-spacing: 3px;	
+}
+/* Begin :: 상품판매를 위한 추가 CSS */
+
+#returns, #hold, #payment {	width: 28%; height: 80%; }
+#goodsCode{	color: rgba(0, 84, 255, 1.0); font-size: 3.0em; font-weight: bold; font-family:'Orbit-B BT'; letter-spacing:5px; }
+#pay{height:70%;}
+/* End :: 상품판매를 위한 추가 CSS */
+
+#searchT{ 
+	left:50%; top:50%; transform: translate(-51%, -50%);
+	height: 90%;
+	background-color: rgba(0, 0, 0, 0.1);}
+
+#lists{ margin-top: 1%; 
+		color:rgba(234, 234, 234, 1.0);
+		background-color: rgba(0, 0, 0, 0.3);}
+#lists tr{ height: 30px; cursor:pointer;}
+#lists th{ background-color:rgba(0, 84, 255, 0.8);}
+#lists td{ color:rgba(0, 84, 255, 0.8);}
+#lists .odd{ background-color:rgba(246, 246, 246, 0.7);}
+#lists .even{ background-color:rgba(217, 229, 255, 0.7);}
+
+table{
+	position: relative; 
+	width: 98%; margin: 0 auto; cell-padding:0px; cell-spacing:0px;
+	border:1px solid rgba(234, 234, 234, 1.0); text-align: center;
+}
+
+#canvas{
+    position: absolute;
+    left: 0px; top: 0px; padding: 0px;
+    width: 100%; height: 100%; 
+    background-image: url("/jsp/images/managements.jpg");
+    background-size: 100% 100%; background-repeat: no-repeat;
+    font-size: 9pt; font-family:'HY울릉도M';
+}
+
+#navigation{
+    position: relative;
+    width:100%; height:5%; 
+    background-color: rgba(0, 84, 255, 1);
+}
+
+#infozone{
+    position: relative; left:50%; top:50%; padding-right:2%;
+    width:100%; height:70%; transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 1.0);
+    text-align: right; font-size: 1.2em; letter-spacing:2px;
+}
+
+.subinfo{font-size: 0.8em;letter-spacing:0px;}
+
+#search{
+	position: relative; left:50%; top: 2%; transform:translate(-50%, 0%);  
+	width: 100%; height: 15%;
+	background-color: rgba(113, 18, 255, 0.1);
+	border-top:2px solid rgba(113, 18, 255, 1.0);
+	border-bottom:2px solid rgba(113, 18, 255, 1.0);
+	font-size: 1.2em;
+}
+
+#message{
+	position: relative; left:50%; top: 2%; transform:translate(-50%, 0%);
+	width: 100%; height: 5%; padding: 0%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#list{
+	position: relative; left:50%; top: 2%; transform:translate(-50%, 0%);
+	overflow-y: scroll;
+	width: 100%; height: 60%;
+	background-color: rgba(255, 36, 163, 0.1);
+	border-top:2px solid rgba(255, 36, 163, 1.0);
+	border-bottom:2px solid rgba(255, 36, 163, 1.0);
+	font-size: 1.2em;
+}
+
+#menu{
+	position: relative; left:50%; top: 4%; transform:translate(-50%, 0%);
+	width: 100%; height: 10%;
+	background-color: rgba(0, 84, 255, 1);
+	font-size: 1.2em;
+}
+
+#command{
+	position: relative; left: 50%; top: 50%; transform:translate(-50%, -50%);
+	width: 98%; height: 75%;
+	background-color: rgba(0, 84, 255, 1);
+	border:1px solid rgba(255, 255, 255, 0.5);
+	text-align: center;
+}
+
+.info{
+    position: relative;
+    width:90%; height:90%;
+    text-align: center; font-size:1.1em; font-family: 'HY울릉도M'; color:rgba(93, 93, 93, 1.0);
+    text-align-last: center; 
+    letter-spacing: 2px;
+}
+
+/* 페이지 상단 네비게이션 관리 메뉴, 로그아웃  버튼 */
+.btn{
+	position: relative;
+	width: 7%; height:100%;
+	background-color: rgba(0, 0, 0, 0.6);  color: rgba(255, 255, 255, 1.0);
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	font-size:0.8em; font-weight:bold;
+}
+
+.btnOver{
+	position: relative;
+	width: 7%; height:100%;
+	background-color: rgba(71, 200, 62, 1.0); color: rgba(255, 255, 255, 1.0);
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	font-size:0.8em; font-weight:bold; 
+	cursor: pointer;
+}
+
+/* 직원 조회 버튼 */
+.searchbtn{
+	width:80%; height:90%;
+	cursor: pointer;
+	background-color: rgba(36, 120, 255, 0.8);
+	border: 1px solid rgba(234, 234, 234, 1.0);
+	font-size: 1.1em; font-family: 'FuturaBlack BT'; text-weight: bold; color: rgba(234, 234, 234, 1.0);
+	letter-spacing: 3px;
+}
+
+.searchbtnover{
+	width:80%; height:90%;
+	cursor: pointer;
+	background-color: rgba(255, 228, 0, 0.8);
+	border: 1px solid rgba(234, 234, 234, 1.0);
+	font-size: 1.1em; font-family: 'FuturaBlack BT'; text-weight: bold; color: rgba(36, 120, 255, 0.8);
+	letter-spacing: 3px;
+}
+
+/* 직원등록 버튼 */
+.regbtn{
+	margin-left:0.3%;
+	width:97.1%; height:90%;
+	cursor: pointer;
+	background-color: rgba(36, 120, 255, 0.8);
+	border: 1px solid rgba(234, 234, 234, 1.0);
+	font-size: 1.1em; font-family: 'FuturaBlack BT'; color: rgba(234, 234, 234, 1.0);
+	letter-spacing: 3px;
+}
+
+.regbtnover{
+	margin-left:0.3%;
+	width:97.1%; height:90%;
+	cursor: pointer;
+	background-color: rgba(255, 228, 0, 0.8);
+	border: 1px solid rgba(234, 234, 234, 1.0);
+	font-size: 1.1em; font-family: 'FuturaBlack BT'; color: rgba(36, 120, 255, 0.8);
+	letter-spacing: 3px;
+}
+
+/* 페이지 하단 관리 메뉴 */
+.action{
+	margin: 0.4% 1.6%;
+	width: 20%; height: 80%;
+	background-color: rgba(0, 0, 0, 0.6);  color: rgba(255, 255, 255, 1.0);
+	border: 1px solid rgba(234, 234, 234, 1.0);
+	font-size: 1.2em; font-weight: bold;
+	letter-spacing: 3px; cursor: pointer;
+}
+
+.actionOver{
+	margin: 0.4% 1.6%;
+	width: 20%; height: 80%;
+	background-color: rgba(71, 200, 62, 1.0); color: rgba(255, 255, 255, 1.0);
+	border: 1px solid rgba(234, 234, 234, 1.0);
+	font-size: 1.4em; font-weight: bold;
+	letter-spacing: 3px;cursor: pointer;
+}
+
+/* 팝업 DIV */
+.bglight{
+	display: none;
+	position: absolute; top: 0%; left: 0%;
+	width: 100%; height: 100%;
+	z-index: 1001;
+	background-color:rgba(0,0,0, 0.5);
+}
+
+.light{
+	display: none;
+	position: absolute; top: 50%; left: 50%;padding:0%;
+	width: 50%; height: 50%; transform: translate(-50%, -50%);
+	z-index: 1002;
+	background-image: url("/jsp/images/bg_rose.jpg");
+	background-size: 100% 100%; background-repeat: no-repeat;
+	border: 5px solid rgba(234, 234, 234, 1.0);
+	font-family: 'FuturaBlack BT';
+	overflow: auto;
+}
+
+.titlezone {
+	position:relative; top:0%; left:0%;
+	width:100%; height:12%;
+	background-color:rgba(140, 140, 140, 0.5);
+}
+.title{
+	position:relative; width:98%; height:70% ; padding-top:0.5%;
+	left:50%; top:50%; transform: translate(-50%, -50%);
+	text-align:center; font-size:1.3em; text-weight:bold;
+	background-color : rgba(255, 228, 0, 1.0); color: rgba(76, 76, 76, 1.0);
+}
+
+.contentszone{
+	position:relative; width:98%; height:74%; padding:1% 1% 0% 1%;
+	background-color:rgba(166, 166, 166, 0.05);
+}
+.datazone{
+	position:relative; float:left; width: 58.5%; height:94%; margin-right:1%; padding-top:1.5%;
+	border: 1px solid rgba(255, 228, 0, 1.0);
+	background-color: rgba( 0, 0, 0, 0.3);
+	text-align: center;
+}
+.submitzone{
+	position:relative; float: left; width: 39.8%; height:94%; padding-top:1.5%;
+	border: 1px solid rgba(255, 228, 0, 1.0);
+	background-color: rgba( 0, 0, 0, 0.3);
+	text-align: center;
+}
+.data{
+	width: 90%; height: 18%; margin:1.5% 0%;
+	background-color: rgba( 0, 0, 0, 0.5); color: rgba(255, 228, 0, 1.0);
+	border: 1px solid rgba(255, 228, 0, 1.0);
+	text-align: center; text-align-last:center; font-size: 1.2em; font-weight:bold;
+}
+.dataOver{
+	width: 90%; height: 18%; margin:1.5% 0%;
+	background-color: rgba(255, 228, 0, 1.0); color: rgba( 0, 0, 0, 1.0);
+	border: 1px solid rgba(255, 228, 0, 1.0);
+	text-align: center; text-align-last:center; font-size: 1.2em; font-weight:bold;
+	cursor:pointer;
+}
+
+.footer {
+	position:relative;
+	width:100%; height:12%;
+	background-color:rgba(166, 166, 166, 0.3);
+}
+.close{
+	position:relative; width:98%; height:70% ; padding-top: 0.5%;
+	left:50%; top:50%; transform: translate(-50%, -50%);
+	text-align:center; font-size:1.3em; text-weight: bold;
+	color: rgba(255, 228, 0, 1.0);
+	cursor:pointer;
+}
